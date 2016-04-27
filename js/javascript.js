@@ -78,8 +78,6 @@ function generateWords3() {
 
 
 
-    console.log("array = " + (array.length - 1));
-    console.log("test2 = " + test2);
     document.getElementById("typed2").innerHTML = array[test2];
     test2++;
     if (test2 >= (array.length)) {
