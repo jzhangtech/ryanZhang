@@ -1,0 +1,173 @@
+$primary-color:green;
+
+
+*{
+	list-style-type:none;
+	font-family:'Fira Sans', sans-serif;
+}
+
+.main-content{
+	margin-left:155px; 
+	background-color:#0277bd; 
+	color:white;
+}
+#social{
+	margin-left:155px; 
+	padding-top:100px;
+	padding-bottom:100px;
+	color:white;
+	background-color:#00b8d4;
+	font-size:36px;
+}
+
+footer{
+	margin-left:155px; 
+	padding-top:100px;
+	padding-bottom:100px;
+	color:white;
+	background-color:#0277bd;
+	font-size:36px;
+}
+
+.logo{
+	border-radius :100%;
+	font-size : 3em;
+	font-weight : bold;
+	
+	margin-bottom : 1em;
+	text-align:center;
+}
+
+header{
+	width:135px;
+	margin:.7em;
+	position:fixed;
+}
+
+.nav-item{
+	margin-top:.5em;
+	margin-right:.5em;
+	text-align:right;
+	color:grey;
+	cursor:pointer;
+
+}
+h1,h2,h3,h4,h5,h6{
+	padding:0px;
+	margin:0px;
+	text-align:center;
+}
+
+section{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+.center{
+    display: table;
+    margin: 0 auto;
+}
+
+.v-nav{
+	margin-top:2em;
+}
+
+.title-tag{
+  background-color: #0094d8;
+  font-family:fantasy;
+  font-size: 1.5em;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 4px 15px;
+  position: absolute;
+  top: 5px;
+  right:5px;
+  z-index: 2;
+}
+
+#social .fa{
+	border: solid 1px white;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 10px;
+    background-color:darkcyan;
+    margin-right: 1em;
+    cursor:pointer;
+    color:white;
+}
+
+#social .fa:focus,#social .fa:hover{
+	color:darkcyan;
+	border: solid 1px white;
+	background-color:white;
+}
+
+
+
+#wine{
+	background-color:#ff6d00;
+	color:#white;
+}
+
+#cb{
+	background-color:#ee6e73;
+	color:#white;
+}
+#fh{
+	background-color:#d32f2f;
+	color:#white;
+	
+}
+
+.project{
+	margin-bottom:15px;
+	cursor:pointer;
+	padding:15px;
+	transition-duration: .5s
+	
+}
+.project:hover{
+	padding:0px;
+	transform:2s;
+
+}
+
+.project img{
+	border:solid 3px white;
+	padding:5px;
+	
+}
+
+
+
+.nav-item:hover,.nav-item:focus{
+	color:blue;
+
+}
+
+
+.btn-custom1{
+	font-size:25px;
+	border-radius: 25px;
+   	margin-top: 25px;
+   	border-color: #ef9f69;
+    background-color: white;
+    color: #ef9f69;
+    padding: 10px 20px 10px 20px;
+}
+.btn-custom1:hover,.btn-custom1:focus{
+	border-color: white;
+    background-color: #ef9f69;
+    color: white;
+}
+
+a{
+	color:grey;
+
+
+}
+a:focus,a:hover{
+	text-decoration:none;
+	color:black;
+}
