@@ -24,16 +24,14 @@ function generateWords() {
 	var phrase="Developer";
 				
 	var subphrase = phrase.substring(0, test);
+	document.getElementById("typed2").innerHTML=subphrase;
+	test++;
+   	if(test>=phrase.length+1){
+   		clearInterval(timer);
 
-	if(test>phrase.length){
-		clearInterval(timer);
-		
-		timer2 = setInterval(generateWords2, 100);
-
+		test2=0;
+		setTimeout(function() { timer2 = setInterval(generateWords2, 100); }, 2000);
 	}
-    document.getElementById("typed2").innerHTML=subphrase;
-    test++;
-   
 }
 
 
@@ -47,15 +45,13 @@ function generateWords2() {
 	
 
 
-	console.log("array = " + (array.length-1));
-	console.log("test2 = " + test2);
     document.getElementById("typed2").innerHTML=array[test2];
     test2++;
     if(test2>=(array.length)){
 		clearInterval(timer2);
-		console.log("finish");
+		
 		test2=0;
-		console.log("test2 = " + test2);
+		
 		
 		setTimeout(function() { timer2 = setInterval(generateWords3, 100); }, 2000);
 		
@@ -84,11 +80,11 @@ function generateWords3() {
     test2++;
     if(test2>=(array.length)){
 		clearInterval(timer2);
-		console.log("finish");
-		test2=0;
-		console.log("test2 = " + test2);
+		
+		test=0;
+		
 
-		setTimeout(function() { timer2 = setInterval(generateWords2, 100); }, 2000);
+		setTimeout(function() { timer = setInterval(generateWords, 100); }, 2000);
 		
 		
 		
