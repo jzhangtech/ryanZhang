@@ -115,7 +115,7 @@ section {
   color: blue; }
 
 .btn-custom1 {
-  font-size: 25px;
+  
   border-radius: 25px;
   margin-top: 25px;
   border-color: #ef9f69;
@@ -136,3 +136,13 @@ a:focus, a:hover {
   color: black; }
 
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 600px){
+  header{
+    display:none;
+  }
+  .main-content,#social,footer{
+     margin-left: 0px;
+  }
+
+}
