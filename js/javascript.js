@@ -6,7 +6,7 @@ var stringArr = [
     'Software Engineer',
     'Casual Gamer',
     'Wizard Apprentice', 
-    'Javascript Fan', 
+    'JavaScript Fan', 
     'Game of Throne Fan',
     'Coffee Drinker'
 ];
