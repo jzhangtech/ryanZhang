@@ -4,7 +4,7 @@ var charAt=0;
 var stringArr = [
     'Web Developer',
     'Software Engineer',
-    'Gamer',
+    'Casual Gamer',
     'Wizard Apprentice', 
     'Javascript Fan', 
     'Game of Throne Fan',
