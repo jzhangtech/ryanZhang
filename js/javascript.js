@@ -4,8 +4,7 @@ var charAt=0;
 var stringArr = ['Web Developer','Software Developer','Casual Gamer','Wizard Apprentice', 
 'Dragon Slayer' , 'MeteorJS Fan', 'Game of Throne Fan' , 'Lord of the Net', 'Programmer'];
 
-
-setTimeout(function() {
+setTimeout(function(){
     timer = setInterval(typed.bind(null,stringArr), 100);
     }, 1000);
 
@@ -67,10 +66,3 @@ function setCharAt(str,index,change) {
     return str.substr(0,index) + change + str.substr(index+1);
 }
 
-/*
-$(function() {
-    $("#typed1").typed({
-        strings: ["Hey, How you doing today?", "My name is Ryan..."],
-        typeSpeed: 0
-    });
-});*/
