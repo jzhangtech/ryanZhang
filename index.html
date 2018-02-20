@@ -1,7 +1,10 @@
 <html>
-   <head></head>
+   <head><script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script></head>
    <body>
-   <input type="date" value="2018-02-20"/>
+   <input type="date" id="date" value="2018-02-20"/>
       
       
       <div id="t1">test1 </div>
@@ -15,6 +18,13 @@
       $( document ).ready(function() {
     console.log( "ready!" );
          
+         var date = $('#date').val();
+            $('#t1').html(date);
+         var date2 = new Date(date + ' ').toLocaleDateString();
+         $('#t2').html(date2);
+         
+         
+       
          
 });
    </script>
