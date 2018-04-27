@@ -3,26 +3,20 @@
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script></head>
+   
    <body>
-   <input type="date" id="date" value="2018-02-20"/>
       
-      
-      <div id="t1">test1 </div>
-       <div id="t2">test2 </div>
-       <div id="t3">test3 </div>
-       <div id="t4">test4 </div>
+    <form id="mobile-search-cars-form" action="javascript:" method="post" novalidate="novalidate">
+       <input type="search" placeholder="test" id="test"/>
+        <button id="searchButton" class="">
+                FIND A CAR
+            </button>
+       <form>
+    
    </body>
    
    <script>
-      
-      $( document ).ready(function() {
-    console.log( "ready!" );
-         
-         var date = $('#date').val();
-            $('#t1').html(date);
-         var date2 = new Date(date + ' ').toLocaleDateString();
-         $('#t2').html(date2);
-         
+  
          
        
          
