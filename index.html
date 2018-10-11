@@ -24,11 +24,26 @@
    </body>
    
    <script>
-  
-         $('#searchButton').click(function(){
-           window.open("google.com");
-           })
        
-      
+              (function() {
+            if (!('arPixel' in window)) {
+                window.arPixel = function() {
+                    window.arPixel.q.push(arguments);
+                };
+                window.arPixel.q = [];
+            }
+            
+            var script = document.createElement('script');
+            script.src = 'http://qa2.autorentals.com/js/ar-pixel.js?${serverStartTime}';
+            script.async = true;
+            
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        })();
+        window.arPixel('setData', {
+            'external1': 'value1',
+            'external2': 'value2'
+        });
+        window.arPixel('send');
    </script>
 </html>
