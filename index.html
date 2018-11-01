@@ -40,10 +40,23 @@
             var firstScript = document.getElementsByTagName('script')[0];
             firstScript.parentNode.insertBefore(script, firstScript);
         })();
-        window.arPixel('setData', {
-            'external1': 'value1',
-            'external2': 'value2'
-        });
+        //set rate data
+ window.arPixel('setData', {
+     'pickupLocation': 'lax',
+     'pickupTime': '',
+     'returnLocation': '',
+     'returnTime': '',
+     'baseRate': '',
+     'totalPrice': '',
+     'supplier': '',
+     'date': '',
+     'rateType': '',
+     'referenceId': '1231',
+     'conversionType': 'booking',
+     'conversionTime': '2018-10-11T10:00:00Z',
+     'userId': 'carrentals',
+     'apiKey': 'GNZsm7Fscmr2AyxcaQoQaEwcYA49APZVJCi9hKyp'
+ });
         window.arPixel('send');
    </script>
 </html>
