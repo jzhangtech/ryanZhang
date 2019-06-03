@@ -22,6 +22,10 @@
    </body>
    
    <script>
-       alert(window.opener);
+       if (navigator.mediaDevices) {
+   alert('has mediaDevices');
+} else {
+   alert('has no mediaDevices');
+}
    </script>
 </html>
