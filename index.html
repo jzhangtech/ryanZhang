@@ -14,10 +14,22 @@
    
    <body>
   
-  <a href="https://www.autorentals.com" target="_blank">auto</a>
+  <a style="font-size: 100px;" href="https://www.autorentals.com" target="_blank">auto</a>
+      
+      
+       <a style="font-size: 100px; href="/" target="_blank">Self</a>
+      
    </body>
    
    <script>
-
+        if (typeof sessionStorage === 'object') {
+            try {
+                sessionStorage.setItem('localStorage', 'test');
+                sessionStorage.removeItem('localStorage');
+            } catch (e) {
+                Storage.prototype.setItem = function() {return {}};
+                Storage.prototype.getItem = function() {return ''};
+            }
+        }
    </script>
 </html>
