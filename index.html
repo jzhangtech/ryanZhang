@@ -13,19 +13,16 @@
    </head>
    
    <body>
-      <img src="http:///www.autorentals.com/onepixelgif?test=test&test2=test2"></img>
-    <form id="mobile-search-cars-form" action="javascript:" method="post" novalidate="novalidate">
-       <input type="search" placeholder="test" id="test"/>
-        <button id="searchButton" class="">
-                FIND A CAR
-            </button>
-       <form>
+  
     
    </body>
    
    <script>
        
-           alert((navigator.doNotTrack === undefined && navigator.msDoNotTrack === undefined && window.doNotTrack === undefined));
+         var is_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(navigator.userAgent);
+
+document.body.innerHTML += "<p>ios webview : " + is_uiwebview + "</p>";
+document.body.innerHTML += "<p>" + navigator.userAgent + "</p>";
 
    </script>
 </html>
