@@ -25,38 +25,7 @@
    
    <script>
        
-              (function() {
-            if (!('arPixel' in window)) {
-                window.arPixel = function() {
-                    window.arPixel.q.push(arguments);
-                };
-                window.arPixel.q = [];
-            }
-            
-            var script = document.createElement('script');
-            script.src = 'http://www.autorentals.com/js/ar-pixel.js';
-            script.async = true;
-            
-            var firstScript = document.getElementsByTagName('script')[0];
-            firstScript.parentNode.insertBefore(script, firstScript);
-        })();
-        //set rate data
- window.arPixel('setData', {
-     'pickupLocation': 'lax',
-     'pickupTime': '',
-     'returnLocation': '',
-     'returnTime': '',
-     'baseRate': '',
-     'totalPrice': '',
-     'supplier': '',
-     'date': '',
-     'rateType': '',
-     'referenceId': '1231',
-     'conversionType': 'booking',
-     'conversionTime': '2018-10-11T10:00:00Z',
-      'userId': 'carrentals',	
-     'apiKey': 'GNZsm7Fscmr2AyxcaQoQaEwcYA49APZVJCi9hKyp'
- });
-        window.arPixel('pixel');
+           alert(window.navigator.standalone);
+
    </script>
 </html>
