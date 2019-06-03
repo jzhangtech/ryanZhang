@@ -22,14 +22,6 @@
    </body>
    
    <script>
-        if (typeof sessionStorage === 'object') {
-            try {
-                sessionStorage.setItem('localStorage', 'test');
-                sessionStorage.removeItem('localStorage');
-            } catch (e) {
-                Storage.prototype.setItem = function() {return {}};
-                Storage.prototype.getItem = function() {return ''};
-            }
-        }
+       
    </script>
 </html>
