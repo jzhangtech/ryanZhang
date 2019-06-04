@@ -23,7 +23,7 @@
    
    <script>
 $('#test').click(function(){
-var ex = window.open('https://www.autorentals.com/reserve?rid=12773695943&place=dynamic_matrix_0_1&reference=12773695943%3Amatrix&zxid=28.695707999999996&uuid=32a9863b-d8c6-4429-910e-8ae398e69ed4');
+var external = window.open('https://www.autorentals.com/reserve?rid=12773695943&place=dynamic_matrix_0_1&reference=12773695943%3Amatrix&zxid=28.695707999999996&uuid=32a9863b-d8c6-4429-910e-8ae398e69ed4');
  var blocked = !external || external.closed || typeof external.closed === 'undefined';
    alert(blocked);
    if(blocked) window.location.href = 'https://www.autorentals.com/reserve?rid=12773695943&place=dynamic_matrix_0_1&reference=12773695943%3Amatrix&zxid=28.695707999999996&uuid=32a9863b-d8c6-4429-910e-8ae398e69ed4';
