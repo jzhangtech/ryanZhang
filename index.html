@@ -14,16 +14,20 @@
    </head>
    
    <body>
-  
-  <a style="font-size: 100px;" href="https://www.autorentals.com" target="_blank">auto</a>
+ 
       
-      
+<div id='test'>me</div>     
        <a style="font-size: 100px;" href="/ryanZhang" target="_blank">Seflf</a>
       
    </body>
    
    <script>
-      
-      alert(window.menubar.visible);
+$('#test').click(function(){
+var ex = window.open('https://www.autorentals.com/reserve?rid=12773695943&place=dynamic_matrix_0_1&reference=12773695943%3Amatrix&zxid=28.695707999999996&uuid=32a9863b-d8c6-4429-910e-8ae398e69ed4');
+ var blocked = !external || external.closed || typeof external.closed === 'undefined';
+   
+   if(blocked) window.location.href = 'https://www.autorentals.com/reserve?rid=12773695943&place=dynamic_matrix_0_1&reference=12773695943%3Amatrix&zxid=28.695707999999996&uuid=32a9863b-d8c6-4429-910e-8ae398e69ed4';
+});
+    
    </script>
 </html>
