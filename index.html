@@ -15,30 +15,8 @@
    </head>
    
    <body>
-
       
-      
-      <div style="border: solid;">
-    <a style="font-size: 25px;" href="https://qa.autorentals.com/SearchResults?location=LAX%20-%20Los%20Angeles%20Intl%20in%20Los%20Angeles%2C%20CA&pickupLocation=LAX%20-%20Los%20Angeles%20Intl%20in%20Los%20Angeles%2C%20CA&dropoffLocation=&oneway=no&pickupDate=06%2F11%2F2019&pickupTime=10%3A00&dropoffDate=06%2F14%2F2019&dropoffTime=10%3A00&carGroup=" target="_blank">Redirects to Car Search</a>
-      
-      </div>
-      
-      <div style="border: solid;">
-       <a style="font-size: 25px;" href="/" target="_blank">Open current page in a popup window</a>
-     
-      </div>
+     <iframe src="https://www.autorentals.com/partnersearch" style="height: 100%; widgth: 100%;">
    </body>
-   
-   <script>
-      
-       var t = document.createTextNode(navigator.userAgent);
-  document.body.appendChild(t);
-$('#test').click(function(){
-var external = window.open('https://www.autorentals.com/reserve?rid=12773695943&place=dynamic_matrix_0_1&reference=12773695943%3Amatrix&zxid=28.695707999999996&uuid=32a9863b-d8c6-4429-910e-8ae398e69ed4');
- var blocked = !external || external.closed || typeof external.closed === 'undefined';
-   alert(blocked);
-   if(blocked) window.location.href = 'https://www.autorentals.com/reserve?rid=12773695943&place=dynamic_matrix_0_1&reference=12773695943%3Amatrix&zxid=28.695707999999996&uuid=32a9863b-d8c6-4429-910e-8ae398e69ed4';
-});
-    
-   </script>
+  
 </html>
